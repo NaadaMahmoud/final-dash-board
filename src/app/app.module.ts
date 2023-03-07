@@ -9,6 +9,9 @@ import { RegisterComponent } from './register/register.component';
 import { ClientsComponent } from './clients/clients.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavSideBarComponent } from './nav-side-bar/nav-side-bar.component';
+import { VendorsComponent } from './vendors/vendors.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     ClientsComponent,
     NotfoundComponent,
+    NavSideBarComponent,
+    VendorsComponent
   ],
   imports: [
     BrowserModule,

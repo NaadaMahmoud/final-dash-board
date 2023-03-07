@@ -12,7 +12,7 @@
       </div>
 
       <!-- Log In Form -->
-      <div style="background-color: white" class="container px-5 my-4 border border-1 rounded" id="form">
+      <form [formGroup]="login_form" (ngSubmit)="submitData()" style="background-color: white" class="container px-5 my-4 border border-1 rounded" id="form">
 
         <!-- Section 1 in the form -->
         <section class="text-center pt-4">
@@ -24,8 +24,8 @@
         <section class="mt-4">
             <!-- Email Addres form -->
             <div>
-                <label for="email_address" style="font-weight:500;" class="form-label">Email Address</label>
-                <input type="email" id="email_address" value="admin@dreamguys.in" style="height:3rem; " class="form-control bg-light" />
+                <label for="email" style="font-weight:500;" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" formControlName="email" value="admin@dreamguys.in" style="height:3rem; " class="form-control bg-light" />
               </div>
 
               <!-- Password form -->
@@ -36,9 +36,9 @@
                   </div>
 
                   <div class="d-flex align align-items-center position-relative">
-                    <input type="password" id="password" value="123456" style="height:3rem;" class="form-control bg-light"  />
-                    <button onclick="Show_Password()" id="open_eye_btn" style="  border:none; position:absolute; right:0.5rem; background-color:transparent;" class="bg-transparent "><i id="open_eye" class="fs-5 icon-eye"></i></button>
-                    <button onclick="Hide_Password()" id="blocked_eye_btn" style=" border:none; position:absolute; right:0.5rem; background-color:transparent;" class=" bg-transparent "><i id="blocked_eye" class="fs-5 icon-eye-blocked"></i></button>
+                    <input type="password" formControlName="password"  name="password" id="password" value="123456" style="height:3rem;" class="form-control bg-light"  />
+                    <!-- <button onclick="Show_Password()" id="open_eye_btn" style="  border:none; position:absolute; right:0.5rem; background-color:transparent;" class="bg-transparent "><i id="open_eye" class="fs-5 icon-eye"></i></button> -->
+                    <!-- <button onclick="Hide_Password()" id="blocked_eye_btn" style=" border:none; position:absolute; right:0.5rem; background-color:transparent;" class=" bg-transparent "><i id="blocked_eye" class="fs-5 icon-eye-blocked"></i></button> -->
 
                   </div>
 
@@ -46,19 +46,19 @@
 
               <!-- Login Button -->
               <div class="mt-4">
-                <button id="login_btn" onclick="Go_To_Main_Page()" style=" background-image: linear-gradient(to right, #647DEE ,  #7F53AC); height:3rem;" class="btn w-100 text-white fs-5 fw-semibold"> Login </button>
+                <button id="login_btn"   style=" background-image: linear-gradient(to right, #647DEE ,  #7F53AC); height:3rem;" class="btn w-100 text-white fs-5 fw-semibold"> Login </button>
               </div>
 
               <!-- Don't have account -->
               <div class="div_of_dont_have_account_in_login_page fw-semibold mt-4 d-flex justify-content-center align-items-center">
                 <p class="me-2 p1_dont_have_account_in_login_page ">Don't have an account yet?</p>
-                <p class="p2_dont_have_account_in_login_page"><a href="Register.html" class="text-primary text-decoration-none">Register</a></p>
+                <p class="p2_dont_have_account_in_login_page"><a routerLink="/register" class="text-primary text-decoration-none">Register</a></p>
               </div>
 
             </section>
-      </div>
+      </form>
 
-    </div>
+    </div> 
 
     <script src="../../assets/js/log-reg-nav.js"></script>
   </body>

@@ -11,6 +11,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavSideBarComponent } from './nav-side-bar/nav-side-bar.component';
 import { VendorsComponent } from './vendors/vendors.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VendorsComponent } from './vendors/vendors.component';
     ClientsComponent,
     NotfoundComponent,
     NavSideBarComponent,
-    VendorsComponent
+    VendorsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

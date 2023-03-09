@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavSideBarComponent } from './nav-side-bar/nav-side-bar.component';
 import { VendorsComponent } from './vendors/vendors.component';
 import { ProductsComponent } from './products/products.component';
+import { MainComponent } from './main/main.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +24,17 @@ import { ProductsComponent } from './products/products.component';
     NotfoundComponent,
     NavSideBarComponent,
     VendorsComponent,
-    ProductsComponent
+    ProductsComponent,
+    MainComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,10 +9,10 @@ export const CLIENTS_URL= USER_URL+'/clients'
 export const VENDORS_URL= USER_URL+'/vendors'
 
 // *************** products url ************************
-export const PRODUCTS_URL= BASE_URL+'products'
+export const PRODUCTS_URL= BASE_URL+'vendor/products'
 
 // **************** orders url ************************
-export const ORDERS_URL= BASE_URL+'orders/orders'
+export const ORDERS_URL= BASE_URL+'clientHistory/orders/'
 
 // **************** jobs url ************************
 export const JOBS_URL= BASE_URL+'jobs'

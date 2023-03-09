@@ -829,7 +829,7 @@
               <div class="col-4 col-sm-5">
                 <h1 class="pt-4">Products</h1>
                 <span id="dash-e"><a href="./index.html" class="text-reset text-decoration-none fw-bold">Dashboard</a> /
-                  Products</span>
+                  Orders </span>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 pt-4 small-e">
                 <div class="row justify-content-around">
@@ -885,63 +885,29 @@
           <table class="table table-striped" id="empolyee">
               <thead>
                   <tr>
-                      <th class="fw-bold ">title</th>
+                      <th class="fw-bold">title</th>
                       <th class="fw-bold">quantity</th>
-                      <th class="fw-bold">price</th>
-                      <th class="fw-bold">matrial</th>
-
+                      <th class="fw-bold">colors</th>
+                      <th class="fw-bold">category</th>
+                      <th class="fw-bold">subcategory</th>
                   </tr>
               </thead>
               <tbody>
       <!--------------------------------------------- row 1 --------------------------------->
-      <tr *ngFor="let products of prod">
+      <tr *ngFor="let customeorders of user_id">
         <td >
             <div class="row align-items-center">
                 <div class="col-3"><a class="text-decoration-none text-dark" href="#">
-
+                    <img class="img-fluid rounded-circle" src="./assets/images/Profile Pictures/avatar-2.jpg">
                 </a></div>
                 <div class="col-9 lh-1">
-                   <a class="text-decoration-none text-dark"><p class="name1"> {{products.title}} </p></a>
+                   <a class="text-decoration-none text-dark"><p class="name1"> {{customeorders.name}} </p></a>
                 </div>
             </div>
         </td>
-        <td class=" pt-3">{{products.quantity}}</td>
-        <td class=" pt-3">{{products.price}}</td>
-        <td class=" pt-3">{{products.matrial}}</td>
+        <td class=" pt-3">{{customeorders._id}}</td>
+        <td class=" pt-3">{{customeorders.price}}</td>
 
-
-        <!-- <td class=" pt-3">9876543217</td>
-        <td>
-            <div class="dropdown ">
-                <a class="btn btn-secondary dropdown-toggle rounded-pill bg-light text-dark fs-6" href="#" role="button"
-                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-regular fa-circle-dot icon1"></i> Active
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-dot icon1"></i>Active</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-dot text-danger"></i>Inactive</a></li>
-                </ul>
-            </div>
-        </td> -->
-        <td class="text-center pt-3"><div class="dropdown dropbtn">
-            <a data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">
-                  <i class="fa-sharp fa-solid fa-pencil"></i>
-                  Edit</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <i class="fa-sharp fa-solid fa-trash-can"></i>
-                  Delete</a
-                >
-              </li>
-            </ul>
-          </div></td>
-    </tr>
       <!--------------------------------------------- row 2 --------------------------------->
 
       <!--------------------------------------------- row 7 --------------------------------->

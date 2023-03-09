@@ -916,35 +916,11 @@
                     <td class=" pt-3">{{user.orders? user.orders.length:'0'}}</td>
                     <!-- <td class=" pt-3">9876543217</td>
                     <td>
-                        <div class="dropdown ">
-                            <a class="btn btn-secondary dropdown-toggle rounded-pill bg-light text-dark fs-6" href="#" role="button"
-                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-circle-dot icon1"></i> Active
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-dot icon1"></i>Active</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-dot text-danger"></i>Inactive</a></li>
-                            </ul>
-                        </div>
+
                     </td> -->
-                    <td class="text-center pt-3"><div class="dropdown dropbtn">
-                        <a data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <i class="fa-sharp fa-solid fa-pencil"></i>
-                              Edit</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <i class="fa-sharp fa-solid fa-trash-can"></i>
-                              Delete</a
-                            >
-                          </li>
-                        </ul>
-                      </div></td>
+                    <td class="text-center pt-3">
+                      <a class="btn" [routerLink]="['/Orders',user._id]"> Orders </a>
+                    </td>
                 </tr>
     <!--------------------------------------------- row 2 --------------------------------->
     <!--  -->
